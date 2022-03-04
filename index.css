@@ -1,0 +1,106 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #1c1c1c;
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+}
+
+main {
+  background: #1f2937;
+  padding: 118px 52px 52px;
+  max-width: 550px;
+}
+
+h1 {
+  font-family: Karla;
+  font-size: 2.5rem;
+  line-height: 40px;
+  color: white;
+  margin: 0;
+}
+
+h1 span {
+  display: block;
+  color: #10b981;
+}
+
+p {
+  font-family: Inter;
+  font-size: 1.25rem;
+  line-height: 28px;
+  color: #d5d4d8;
+  margin-bottom: 3rem;
+}
+
+button {
+  background-color: #10b981;
+  font-family: Inter;
+  font-weight: 500;
+  font-size: 1rem;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 1em 1.5em;
+  transition: transform 125ms ease-in;
+}
+
+button:hover {
+  cursor: pointer;
+  transform: scale(1.03);
+}
+button:focus {
+  outline: 0;
+}
+
+hr {
+  border: 1px solid #2f3e53;
+  margin-block: 2.5rem;
+}
+
+form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.option {
+  background: #273549;
+  font-family: Inter;
+  font-size: 1rem;
+  flex: 1 1 211px;
+  border: none;
+  border-radius: 6px;
+  color: #10b981;
+  text-align: center;
+  padding: 0.8em;
+}
+
+.option:focus {
+  outline: 0;
+}
+
+button:focus-visible,
+.option:focus-visible {
+  outline-offset: 5px;
+  outline: 1px solid #10b981;
+}
+
+.option::selection {
+  color: #1f2937;
+  background: #10b981;
+}
+
+::placeholder {
+  text-align: center;
+  font-size: 2.5rem;
+  font-family: Inter;
+  letter-spacing: -2.5px;
+  color: #202b3c;
+}
