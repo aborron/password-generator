@@ -1,5 +1,7 @@
 # Password Generator
 
+[View Live Demo](https://sad-bose-50d853.netlify.app/)
+
 The password generator will randomly generate four 15 character passwords that may inlcude lowercase, uppercase, and symbol characters. Users can tab through for ease of accessibility. 
 
 Future features:
