@@ -100,25 +100,16 @@ const option3El = document.getElementById("option-3");
 const option4El = document.getElementById("option-4");
 
 generateEl.addEventListener("click", populate);
-formEl.addEventListener("click", selectPassword, false);
+option1El.addEventListener("click", this.copy)
+option2El.addEventListener("click", this.copy)
+option3El.addEventListener("click", this.copy)
+option4El.addEventListener("click", this.copy)
 
-function selectPassword(e) {
-  let clickedItem = e.target.id;
-  switch (clickedItem) {
-    case "option-1":
-      option1El.select();
-      break;
-    case "option-2":
-      option2El.select();
-      break;
-    case "option-3":
-      option3El.select();
-      break;
-    case "option-4":
-      option4El.select();
-      break;
-  }
-  e.stopPropagation();
+function copy() {
+    this.select()
+    this.setSelectionRange(0, 99999); /* For mobile devices */
+
+    navigator.clipboard.writeText(this.value);
 }
 
 function populate() {

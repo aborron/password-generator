@@ -45,6 +45,7 @@ button {
   font-weight: 500;
   font-size: 1rem;
   color: white;
+  cursor: pointer;
   border: none;
   border-radius: 6px;
   padding: 1em 1.5em;
@@ -52,11 +53,15 @@ button {
 }
 
 button:hover {
-  cursor: pointer;
   transform: scale(1.03);
 }
 button:focus {
   outline: 0;
+}
+
+button:focus-visible {
+  outline-offset: 5px;
+  outline: 1px solid #10b981;
 }
 
 hr {
@@ -77,6 +82,7 @@ form {
   flex: 1 1 211px;
   border: none;
   border-radius: 6px;
+  cursor: unset;
   color: #10b981;
   text-align: center;
   padding: 0.8em;
@@ -84,12 +90,6 @@ form {
 
 .option:focus {
   outline: 0;
-}
-
-button:focus-visible,
-.option:focus-visible {
-  outline-offset: 5px;
-  outline: 1px solid #10b981;
 }
 
 .option::selection {
